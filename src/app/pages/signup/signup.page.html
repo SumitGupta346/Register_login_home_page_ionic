@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+  <app-logo></app-logo>
+    <h1>Sign Up11</h1>
+  </div>
+  <form>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input type="text" id="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">E-mail</ion-label>
+      <ion-input type="email" id="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="text" id="password"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <a routerLink='/login'>Already have an account ?</a>
+      <a routerLink='/welcome' style="padding:20px">Home</a>
+
+    </ion-item>
+  </ion-list>
+  <ion-button type="button" expand="block" shape="round" color="success" (click)="Register()">Signup</ion-button>
+</form>
+
+</ion-content>
